@@ -1,0 +1,13 @@
+<h1>Shoes</h1>
+<div class="row">
+
+  <% @shoes.each do |shoe| %>
+    <div class="col card m-2" style="width: 18rem;">
+    <h1 ><%= shoe.brand.name %> </h1>
+    <p><a href=“#”><%= shoe.name %> </a></p>
+     <p><%= shoe.size %> </p>
+    <img src="<%= shoe.images[0].url %>"  >    
+    </div>
+  <% end %>
+  
+</div>
